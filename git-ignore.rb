@@ -1,9 +1,9 @@
 class GitIgnore < Formula
   desc "Quickly and easily list and fetch .gitignore templates from www.gitignore.io"
   homepage "https://github.com/sondr3/git-ignore"
-  url "https://github.com/sondr3/git-ignore/releases/download/v1.0.0-pre/git-ignore-v1.0.0-pre-x86_64-apple-darwin.tar.gz"
-  sha256 "844f0f4cf27d0df538ce250cd30983a0122effae4a029dfd1fd7d2d391de0cc9"
-  version "1.0.0-pre"
+  url "https://github.com/sondr3/git-ignore/releases/download/v1.0.0/git-ignore-v1.0.0-x86_64-apple-darwin.tar.gz"
+  sha256 "28aaa77936075d644b83284cf8a561d35ad0a04149633a6725b57eed337914aa"
+  version "1.0.0"
 
   def install
     bin.install "git-ignore"
@@ -11,6 +11,6 @@ class GitIgnore < Formula
   end
 
   test do
-    assert_equal %x('#{bin}/git-ignore -V'), "git ignore 0.2.0\n"
+    assert_equal %x('#{bin}/git-ignore -V'), "git ignore 1.0.0\n"
   end
 end
