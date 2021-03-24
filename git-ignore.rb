@@ -7,7 +7,7 @@ class GitIgnore < Formula
 
   def install
     bin.install "git-ignore"
-    man1.install "git-ignore.1"
+    # man1.install "git-ignore.1"
   end
 
   test do
