@@ -1,0 +1,26 @@
+name: pipeline
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Tap repo
+        run: brew tap sondr3/homebrew-taps
+
+      - name: Install git-ignore
+        run: |
+          brew install git-ignore
+          brew test git-ignore
+
