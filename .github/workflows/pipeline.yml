@@ -6,9 +6,7 @@ jobs:
   check:
     strategy:
       fail-fast: false
-      matrix:
-        os: [macos-latest, ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
 
