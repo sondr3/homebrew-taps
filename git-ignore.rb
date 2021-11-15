@@ -11,6 +11,6 @@ class GitIgnore < Formula
   end
 
   test do
-    assert_equal %x('#{bin}/git-ignore -V'), "git ignore 1.1.2\n"
+    assert_equal "git ignore 1.1.2", shell_output("#{bin}/git-ignore -V").strip
   end
 end
