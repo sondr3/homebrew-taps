@@ -8,9 +8,9 @@ class GitIgnore < Formula
   def install
     bin.install "git-ignore"
     man1.install "git-ignore.1"
-    bash_completion "git-ignore.bash"
-    zsh_completion "_git-ignore"
-    fish_completion "git-ignore.fish"
+    bash_completion.install "git-ignore.bash"
+    zsh_completion.install "_git-ignore"
+    fish_completion.install "git-ignore.fish"
   end
 
   test do
