@@ -5,9 +5,9 @@
 ## Installation
 
 1. `brew tap sondr3/homebrew-taps`
-2. Install one of the formulae here
-3. ???
-4. `brew install git-ignore`
+2. ???
+3. Install one of the formulae here
+  - `brew install git-ignore`
 
 ## What
 
