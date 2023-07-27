@@ -34,3 +34,9 @@ jobs:
           brew install git-ignore
           brew test git-ignore
 
+
+      - name: Install dev-serve
+        run: |
+          brew install dev-serve
+          brew test dev-serve
+
