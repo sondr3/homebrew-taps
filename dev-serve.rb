@@ -1,9 +1,9 @@
 class DevServe < Formula
   desc "Spin up a simple static site server with live reload"
   homepage "https://github.com/sondr3/dev-serve"
-  url "https://github.com/sondr3/dev-serve/releases/download/v0.1.0/dev-serve-x86_64-apple-darwin.tar.gz"
-  sha256 "7933117f04ec4d6413060963bced22a8ffda0e1155e011a08f90f57da2b54cc6"
-  version "0.1.0"
+  url "https://github.com/sondr3/dev-serve/releases/download/v0.1.1/dev-serve-x86_64-apple-darwin.tar.gz"
+  sha256 "973a627d4abc89dd997a9b2ce6af42e48797964908ffb7828cfac4ec210839b5"
+  version "0.1.1"
 
   def install
     bin.install "dev-serve"
@@ -14,6 +14,6 @@ class DevServe < Formula
   end
 
   test do
-    assert_equal "dev-serve 0.1.0", shell_output("#{bin}/dev-serve -V").strip
+    assert_equal "dev-serve 0.1.1", shell_output("#{bin}/dev-serve -V").strip
   end
 end
