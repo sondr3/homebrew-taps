@@ -21,7 +21,7 @@ jobs:
           path: ${{ steps.set-up-homebrew.outputs.gems-path }}
           key: ${{ runner.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ runner.os }}-rubygems-
-      
+
       - name: Install Homebrew Bundler RubyGems
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
@@ -34,9 +34,7 @@ jobs:
           brew install git-ignore
           brew test git-ignore
 
-
       - name: Install dev-serve
         run: |
           brew install dev-serve
           brew test dev-serve
-
