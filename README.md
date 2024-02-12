@@ -9,6 +9,7 @@
 3. Install one of the formulae here
   - `brew install git-ignore`
   - `brew install dev-serve`
+  - `brew install timet`
 
 ## What
 

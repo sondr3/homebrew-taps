@@ -38,3 +38,8 @@ jobs:
         run: |
           brew install dev-serve
           brew test dev-serve
+
+      - name: Install timet
+        run: |
+          brew install timet
+          brew test timet
