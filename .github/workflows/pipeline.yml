@@ -6,7 +6,10 @@ jobs:
   check:
     strategy:
       fail-fast: false
-    runs-on: macos-latest
+      matrix:
+        os: [macos-latest, macos-14]
+
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
 
