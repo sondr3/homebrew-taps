@@ -9,7 +9,7 @@ class GitIgnore < Formula
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/sondr3/git-ignore/releases/download/v#{version}/git-ignore-x86_64-apple-darwin.tar.gz"
+    url "https://github.com/sondr3/git-ignore/releases/download/v#{version}/git-ignore-aarch64-apple-darwin.tar.gz"
     sha256 "d2caf3a1393c2fa2759f07c9152aac4fa2d5bbb6357ca733add7565d321b60d3"
   end
 
