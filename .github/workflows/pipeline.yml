@@ -8,6 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-latest, macos-14]
+        package: [git-ignore, dev-serve, timet, human-ids]
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -32,17 +33,7 @@ jobs:
       - name: Tap repo
         run: brew tap sondr3/homebrew-taps
 
-      - name: Install git-ignore
+      - name: Install ${{ matrix.package }}
         run: |
-          brew install git-ignore
-          brew test git-ignore
-
-      - name: Install dev-serve
-        run: |
-          brew install dev-serve
-          brew test dev-serve
-
-      - name: Install timet
-        run: |
-          brew install timet
-          brew test timet
+          brew install ${{ matrix.package }}
+          brew test ${{ matrix.package}}
