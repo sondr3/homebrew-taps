@@ -10,6 +10,7 @@
   - `brew install git-ignore`
   - `brew install dev-serve`
   - `brew install timet`
+  - `brew install human-ids`
 
 ## What
 
@@ -17,3 +18,5 @@ This repository contains the taps for some of the software that I've created:
 
 - [git-ignore](https://github.com/sondr3/git-ignore)
 - [dev-serve](https://github.com/sondr3/dev-serve)
+- [timet](https://github.com/sondr3/timet-rs)
+- [human-ids](https://github.com/sondr3/human-ids)
