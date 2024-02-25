@@ -1,4 +1,4 @@
-class GitIgnore < Formula
+class HumanIds < Formula
   desc "Quickly and easily list and fetch .gitignore templates from www.gitignore.io"
   homepage "https://github.com/sondr3/human-ids"
   version "0.1.1"
