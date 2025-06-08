@@ -8,7 +8,12 @@ jobs:
       fail-fast: false
       matrix:
         os: [macos-latest, macos-14]
-        package: [git-ignore, dev-serve, timet, human-ids]
+        package:
+          - dev-serve
+          - git-ignore
+          - human-ids
+          - statisk
+          - timet
 
     runs-on: ${{ matrix.os }}
     steps:
