@@ -1,16 +1,16 @@
 class Statisk < Formula
   desc "A simple and opinionated static site generator"
   homepage "https://github.com/sondr3/statisk"
-  version "0.2.5"
+  version "0.2.6"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/sondr3/statisk/releases/download/v#{version}/statisk-x86_64-apple-darwin.tar.gz"
-    sha256 "c7512b648fc39c8467e6f8d4c2a7c1f07ec2a8f55aca1a056a9c7967b7c5e03d"
+    sha256 "63766fbc2a582da23f412c5ed165706c979090f7a280bfe0071bafd9d17d7744"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/sondr3/statisk/releases/download/v#{version}/statisk-aarch64-apple-darwin.tar.gz"
-    sha256 "b4c76266fe06d562a9f62205398bff57b9ed48b37bf7c94246d5d415e1de19c3"
+    sha256 "dbc2d2149fed362f71f718345068fa43eefad4c4a981fbaaea6e54a97c062891"
   end
 
   def install
