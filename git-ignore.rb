@@ -1,6 +1,8 @@
 class GitIgnore < Formula
   desc "Quickly and easily list and fetch .gitignore templates from www.gitignore.io"
   homepage "https://github.com/sondr3/git-ignore"
+  conflicts_with "git-ignorers", because: "both provide the same utilities"
+  conflicts_with "git-ignore", because: "provided by homebrew/core"
   version "1.4.0"
 
   if OS.mac? && Hardware::CPU.intel?

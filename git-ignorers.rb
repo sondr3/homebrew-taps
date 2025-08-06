@@ -2,6 +2,7 @@ class GitIgnorers < Formula
   desc "Quickly and easily list and fetch .gitignore templates from www.gitignore.io"
   homepage "https://github.com/sondr3/git-ignore"
   version "1.4.0"
+  conflicts_with "git-ignore", because: "provided by homebrew/core"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/sondr3/git-ignore/releases/download/v#{version}/git-ignore-x86_64-apple-darwin.tar.gz"
