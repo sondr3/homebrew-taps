@@ -8,7 +8,8 @@
 2. ???
 3. Install one of the formulae here
 
-- `brew install git-ignorers`
+- `brew install git-ignore`
+- `brew install git-ignorers` (in case `git-ignore` is a conflict)
 - `brew install dev-serve`
 - `brew install timet`
 - `brew install human-ids`
