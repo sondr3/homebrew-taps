@@ -7,10 +7,11 @@
 1. `brew tap sondr3/homebrew-taps`
 2. ???
 3. Install one of the formulae here
-  - `brew install git-ignore`
-  - `brew install dev-serve`
-  - `brew install timet`
-  - `brew install human-ids`
+
+- `brew install git-ignorers`
+- `brew install dev-serve`
+- `brew install timet`
+- `brew install human-ids`
 
 ## What
 

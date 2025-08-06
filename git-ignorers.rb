@@ -1,4 +1,4 @@
-class GitIgnore < Formula
+class GitIgnorers < Formula
   desc "Quickly and easily list and fetch .gitignore templates from www.gitignore.io"
   homepage "https://github.com/sondr3/git-ignore"
   version "1.4.0"
@@ -14,7 +14,7 @@ class GitIgnore < Formula
   end
 
   def install
-    bin.install "git-ignore"
+    bin.install "git-ignore" => "git-ignorers"
     man1.install "git-ignore.1"
     bash_completion.install "git-ignore.bash"
     zsh_completion.install "_git-ignore"
@@ -22,6 +22,6 @@ class GitIgnore < Formula
   end
 
   test do
-    assert_equal "git-ignore #{version}", shell_output("#{bin}/git-ignore -V").strip
+    assert_equal "git-ignore #{version}", shell_output("#{bin}/git-ignorers -V").strip
   end
 end
