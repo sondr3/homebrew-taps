@@ -15,10 +15,10 @@ class GitIgnorers < Formula
 
   def install
     bin.install "git-ignore" => "git-ignorers"
-    man1.install "git-ignore.1"
-    bash_completion.install "git-ignore.bash"
-    zsh_completion.install "_git-ignore"
-    fish_completion.install "git-ignore.fish"
+    man1.install "git-ignore.1" => "git-ignorers.1"
+    bash_completion.install "git-ignore.bash" => "git-ignorers.bash"
+    zsh_completion.install "_git-ignore" => "_git-ignorers"
+    fish_completion.install "git-ignore.fish" => "git-ignorers.fish"
   end
 
   test do
